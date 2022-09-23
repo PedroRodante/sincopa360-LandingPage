@@ -1,0 +1,373 @@
+@font-face {
+  font-family: Naked;
+  src: url(fonts/naked_extravagant/NakedExtravagant.ttf);
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #e0b0b9;
+}
+
+/* inicio header */
+
+.up {
+  display: flex;
+  align-items: center;
+}
+
+.Logo img {
+  width: 50px;
+  padding: 0px 8px 0px 0px;
+}
+
+.Logo img:hover{
+  transition: 0.3s all ease;
+  color: beige;
+  opacity: 10%;
+}
+
+.sincopa {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  list-style: none;
+  display: flex;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.sincopa:hover {
+  transition: 0.3s all ease;
+  color: beige;
+  opacity: 70%;
+  background: #000000;
+  filter: drop-shadow(2px 3px 15px #000)
+}
+
+nav {
+  z-index: 10;
+  background-color: beige;
+  opacity: 95%;
+  max-width: fit-content;
+  display: flex;
+  position: fixed;
+  padding: 0px 0px 0px 15px;
+  border-radius: 5px;
+  width: 100%;
+  top: 0;
+  filter: drop-shadow(2px 3px 15px #000);
+}
+
+.lista_nav {
+  font-family: "Courier New", Courier, monospace;
+  display: flex;
+  list-style: none;
+  width: 50%;
+  padding: 2px;
+}
+
+.lista_nav > li > a {
+  text-decoration: none;
+  color: black;
+  font-weight: 400;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: 0.6s all ease;
+  padding: 5px 10px;
+  margin: 5px;
+}
+
+.lista_nav li a:hover {
+  transition: 0.3s all ease;
+  color: beige;
+  opacity: 70%;
+  background: #000000;
+}
+
+/* fim header */
+/* inicio intro */
+
+.fotoeparagrafo {
+  display: flex;
+  padding: 0 15px;
+  flex-direction: column;
+}
+
+.fotoinicio img {
+  max-width: 1920px;
+  width: 100%;
+  border-radius: 0px 0px 10px 10px;
+  margin-top: -95px;
+  filter: drop-shadow(2px 3px 15px #000);
+}
+
+.paragrafoinicio {
+  z-index: 9;
+  background-color: #f5f5dcb7;
+  color: #000000;
+  padding: 0px 10px;
+  border-radius: 10px;
+  font-size: 15px;
+  margin: -80px 10px 50px 10px;
+  max-width: 100%;
+}
+
+/* fim intro */
+/* inicio articles "Projetos" */
+
+section {
+  display: flex;
+  flex-direction: column;
+  margin-top: 6%;
+  border-radius: 2px;
+}
+
+.fotos img {
+  border-radius: 10px;
+  filter: drop-shadow(2px 3px 15px #000)
+}
+
+.articles {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+  text-align: center;
+  transition: 0.6s all ease;
+  padding: 10px 20px;
+}
+
+.articles a {
+  text-decoration: none;
+  font-size: 18px;
+  padding: 5px;
+  border-radius: 5px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.articles a:hover {
+  transition: 0.3s all ease;
+  color: #e0b0b9;
+  opacity: 80%;
+  background: #000000;
+  filter: drop-shadow(2px 3px 15px #000)
+}
+
+/* inicio efeito texto Article */
+
+.fotos{
+  position: relative;
+}
+
+.conteudoArticle{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  max-width: 350px;
+  width: 85%;
+  filter: drop-shadow(2px 3px 15px #000);
+}
+
+.fotos:hover .conteudoArticle{
+  display: block;
+}
+
+.fotos:hover img{
+  transition: .6s all ease;
+  filter: blur(5px);
+}
+
+h5{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin: 0 0 5px 0;
+}
+
+.conteudoArticle p{
+  color: #000000;
+  background-color: beige;
+  opacity: 65%;
+  border-radius: 10px;
+  padding: 5px;
+  font-size: 16px;
+  filter: drop-shadow(2px 3px 15px #000)
+}
+
+/* fim efeito texto Article */
+/* fim articles */
+/* Inicio articles "Clientes" */
+
+.spotify iframe{
+  margin-top: 10px;
+  display: flex;
+  filter: drop-shadow(2px 3px 15px #000);
+  border-radius: 12px
+}
+
+.clientes {
+  font-size: 18px;
+  max-width: 95%;
+  justify-content: flex-start;
+}
+
+.divclientes {
+  background-color: #282828;
+  color: #e0b0b9;
+  margin-top: 20px;
+  max-width: 100%;
+  border-radius: 20px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  filter: drop-shadow(2px 3px 15px #000);
+  align-content: center;
+}
+
+.divclientes h4 {
+  font-size: 15px;
+  padding: 50px 0;
+  margin: 0;
+  justify-content: space-around;
+}
+
+.divclientes :hover{
+  transition: 0.1s all ease;
+  background-color: #e0b0b9;
+  color: #000000;
+  justify-content: center;
+  border-radius: 20px;
+  filter: drop-shadow(2px 3px 15px #000);
+}
+/* Fim articles "Clientes" */
+
+/* inicio "Entre em contato" */
+.entreemcontato a {
+  text-decoration: none;
+  color: black;
+  width: fit-content;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 18px;
+  list-style: none;
+  display: flex;
+  margin: 10px auto 0 auto;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.entreemcontato a:hover {
+  transition: 0.3s all ease;
+  color: #e0b0b9;
+  opacity: 83%;
+  background: #000000;
+  filter: drop-shadow(2px 3px 15px #000)
+}
+
+/* fim "Entre em contato" */
+/* inicio footer */
+
+footer {
+  background-color: beige;
+  font-size: 14px;
+  border-radius: 10px 10px 0 0;
+  margin: 0 auto;
+  width: 30%;
+  padding: 1px;
+  text-align: center;
+}
+
+/* fim footer */
+
+@media(max-width: 844px)
+{
+  .paragrafoinicio{
+    padding: 0px 10px;
+    margin: -95px 10px 50px 10px;
+  }
+
+  .spotify iframe{
+    border-radius: 0;
+    width: 90%;
+    margin: 10px auto;
+  }
+}
+
+@media(max-width: 768px)
+{
+  nav {
+    max-width: none;
+    border-radius: 0;
+    width: 100%;
+    top: 0;
+  }
+
+  .sincopa {
+    text-align: center;
+  }
+
+  .lista_nav{
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+    width: 100%;
+  }
+
+  .lista_nav > li{
+    width:fit-content;
+    text-align: end;
+  }
+
+  .fotoinicio img {
+    width: 100%;
+    margin-top: 10%;
+    border-radius: 5px;
+  }
+
+  .paragrafoinicio {
+    margin: 20px 10px 50px 10px;
+    max-width: 100%;
+    font-size: 16px;
+  }
+
+  .divclientes h4 {
+    font-size: 13px;
+    text-align: center;
+  }
+
+  .divclientes{
+    border-radius: 0;
+  }
+
+  .divclientes :hover{
+    border-radius: 0;
+  }
+
+  footer {
+    width: 50%;
+  }
+}
+
+@media(max-width: 525px){
+
+  .lista_nav{
+    flex-direction: column;
+    padding: 0px;
+    width: 100%;
+    align-items: end;
+    padding-right: 21px;
+  }
+}
