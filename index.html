@@ -9,7 +9,7 @@
   </head>
   <body>
     <header>
-      <nav>
+      <nav class="nav">
         <div class="up">
           <div class="Logo">
             <a href="http://www.sincopa360.com.br"
@@ -22,9 +22,25 @@
             >
           </div>
         </div>
+        <div>
+          <img src="" alt="" />
+          <img src="" alt="" />
+        </div>
         <ul class="lista_nav">
           <li class="scroll_effect" data-link="projetos_ancora">
-            <a href="javascrip:void(0)">Projetos</a>
+            <a href="javascrip:void(0)">O que Fazemos</a>
+          </li>
+          <li class="scroll_effect" data-link="podcasts_ancora">
+            <a href="javascrip:void(0)">Podcasts</a>
+          </li>
+          <li class="scroll_effect" data-link="bandas_ancora">
+            <a href="javascrip:void(0)">Bandas</a>
+          </li>
+          <li class="scroll_effect" data-link="canal_ancora">
+            <a href="javascrip:void(0)">Youtube</a>
+          </li>
+          <li class="scroll_effect" data-link="clientes_ancora">
+            <a href="javascrip:void(0)">Clientes</a>
           </li>
           <li>
             <a href="https://www.linkedin.com/in/pedrorodante/" target="_blank"
@@ -49,19 +65,21 @@
           </div>
           <div class="paragrafoinicio">
             <p>
-              A produtora Síncopa 360° oferece um alto nível de produção em
-              projetos de áudio com os recursos que você precisa. Do auxilio na
-              formação do projeto até a gravação, mixagem, licenciamento e
-              distribuição.
+              A Síncopa 360° é uma produtora paulista localizada no centro da
+              capital, que oferece um alto nível de produção em projetos de
+              áudio com os recursos que você precisa. Do auxílio na formação do
+              projeto até a gravação, mixagem, licenciamento e distribuição.
             </p>
           </div>
         </div>
-        <div id="projetos_ancora" class="articles">
+        <div class="articles">
           <article class="desenvolvimento_podcasts">
             <div class="todoArticle">
-              <h5>Podcasts</h5>
+              <h5 id="projetos_ancora" class="titulo_projetos">
+                P o d c a s t s
+              </h5>
               <div class="fotos">
-                <img src="img/IMG_2678.png" alt="" />
+                <img src="img/IMG_2702.jpg" alt="" />
                 <div class="conteudoArticle">
                   <p>
                     Desde o auxilio na roteirização e idealização do projeto,
@@ -80,9 +98,9 @@
           </article>
           <article class="captacao_cabine">
             <div class="todoArticle">
-              <h5>Captação na Cabine</h5>
+              <h5 class="titulo_projetos">C a p t a ç ã o</h5>
               <div class="fotos">
-                <img src="img/IMG_2702.jpg" alt="" />
+                <img src="img/IMG_2678.png" alt="" />
                 <div class="conteudoArticle">
                   <p>
                     Com uma cabine a prova de som e um tratamento acústico de
@@ -101,7 +119,7 @@
           </article>
           <article class="captacao_cabine">
             <div class="todoArticle">
-              <h5>Produção Musical</h5>
+              <h5 class="titulo_projetos">P r o d u ç ã o</h5>
               <div class="fotos">
                 <img src="img/tecladinho.jpg" alt="" />
                 <div class="conteudoArticle">
@@ -122,8 +140,8 @@
           </article>
         </div>
         <article>
-          <h4 class="clientes">
-            Alguns projetos e clientes que passaram por aqui:
+          <h4 id="podcasts_ancora" class="clientes">
+            Alguns podcasts fizemos por aqui:
           </h4>
           <div class="spotify">
             <iframe
@@ -148,7 +166,50 @@
             ></iframe>
             <iframe
               style="border-radius: 12px"
-              src="https://open.spotify.com/embed/track/7jiGDepknDT4FpbO18dbqV?utm_source=generator&theme=0"
+              src="https://open.spotify.com/embed/show/6Uh1JhwhJLyfhjPsR36SLH?utm_source=generator"
+              width="100%"
+              height="152"
+              frameborder="0"
+              allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"
+            ></iframe>
+            <iframe
+              style="border-radius: 12px"
+              src="https://open.spotify.com/embed/episode/02fc6Ihyw4VW0bfsLiloxQ?utm_source=generator"
+              width="100%"
+              height="152"
+              frameborder="0"
+              allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"
+            ></iframe>
+            <h4 id="bandas_ancora" class="clientes">
+              Algumas bandas que tivemos a honra de acompanhar:
+            </h4>
+            <iframe
+              style="border-radius: 12px"
+              src="https://open.spotify.com/embed/track/6E1C76vwvkS0S3xFazdiCp?utm_source=generator"
+              width="100%"
+              height="152"
+              frameborder="0"
+              allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"
+            ></iframe>
+            <iframe
+              style="border-radius: 12px"
+              src="https://open.spotify.com/embed/track/15qiwmkMnoXLqrQ4rvIyqB?utm_source=generator"
+              width="100%"
+              height="152"
+              frameborder="0"
+              allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"
+            ></iframe>
+            <iframe
+              style="border-radius: 12px"
+              src="https://open.spotify.com/embed/track/5ulL4PdxUiZUx7mkvZ5MdE?utm_source=generator"
               width="100%"
               height="152"
               frameborder="0"
@@ -157,6 +218,84 @@
               loading="lazy"
             ></iframe>
           </div>
+          <h4 id="canal_ancora" class="clientes">
+            Um Canal e Spotify proprietário e querido que mostra um pouco da
+            nossa estrutura e o que a gente pode fazer por você:
+          </h4>
+          <div class="youtube">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/2jC1jwn3o7I"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/jQBA2ZN8nf0"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="bloco_texto">
+            <p class="conversas_texto">
+              O Canal "Conversas Fiadas Não Curam Ressaca" é um projeto da
+              produtora musical Sincopa360 com um ideia simples, mas diferente:
+              produzir algo sempre com um tema diferente, no susto, com tempo e
+              com a participação de artistas e personagens aleatórios de
+              diferentes lugares e visões, para garantir a dificuldade do
+              desafio. Lembrando, é claro, que tudo pode dar errado.
+            </p>
+            <p class="conversas_texto">
+              A qualidade das produções se deve em grande parte à expertise da
+              Sincopa360, que conta com uma equipe altamente capacitada e
+              principalmente, alinhada com o famoso conceito paulista do "fazer
+              acontecer". Além disso, a produtora tem uma visão muito clara do
+              que é necessário para produzir música de qualidade, o que tem se
+              refletido em nossas produções.
+            </p>
+            <p class="conversas_texto">
+              Esse projeto é apenas um exemplo do que a Sincopa360 é capaz de
+              fazer. A produtora tem trabalhado em diversos projetos, sempre
+              buscando a excelência em tudo o que faz. Seja produzindo discos,
+              clipes ou shows, a Sincopa360 está sempre tentando inovar em cada
+              projeto.
+            </p>
+          </div>
+          <div class="spotify">
+            <iframe
+              style="border-radius: 12px"
+              src="https://open.spotify.com/embed/artist/6aZ8G7Tkv373j5zLBdfCLS?utm_source=generator&theme=0"
+              width="100%"
+              height="352"
+              frameborder="0"
+              allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"
+            ></iframe>
+          </div>
+          <div class="bloco_texto">
+            <p class="conversas_texto">
+              O projeto em si é um exemplo de que podemos cuidar de tudo.
+              Produção de áudio, produção musical, produção de video, design,
+              Criação da identidade visual, distribuição em todas as plataformas
+              de streaming e que mais for necessário.
+            </p>
+            <p class="conversas_texto">
+              Dê uma conferida nesse e em outros projetos da produtora. Você
+              certamente irá se surpreender com a qualidade das produções e com
+              a capacidade da empresa de entregar resultados bacanas em um curto
+              espaço de tempo.
+            </p>
+          </div>
+          <h4 id="clientes_ancora" class="clientes">
+            Clientes que tivemos a honra de atender:
+          </h4>
           <div class="divclientes">
             <h4>FUNDAÇÃO ESTUDAR</h4>
             <h4>SPOTIFY</h4>

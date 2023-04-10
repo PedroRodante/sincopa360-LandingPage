@@ -3,18 +3,14 @@
   src: url(fonts/naked_extravagant/NakedExtravagant.ttf);
 }
 
-html{
-  scroll-behavior: smooth;
-}
-
 body {
   position: relative;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  max-width: 1200px;
+  max-width: 1280px;
   width: 100%;
   margin: 0 auto;
-  background-color: #e0b0b9;
+  background-color: #e4917f;
 }
 
 /* inicio header */
@@ -26,7 +22,7 @@ body {
 
 .Logo img {
   width: 50px;
-  padding: 0px 8px 0px 0px;
+  padding: 0px 8px 0px 8px;
 }
 
 .Logo img:hover{
@@ -50,40 +46,41 @@ body {
   color: beige;
   opacity: 70%;
   background: #000000;
-  filter: drop-shadow(2px 3px 15px #000)
+  filter: drop-shadow(1px 2px 5px #333)
 }
 
 nav {
   z-index: 10;
   background-color: beige;
   opacity: 95%;
-  max-width: fit-content;
+  max-width: 1280px;
   display: flex;
   position: fixed;
-  padding: 0px 0px 0px 15px;
+  padding: 3px 0 3px 0;
   border-radius: 5px;
   width: 100%;
   top: 0;
-  filter: drop-shadow(2px 3px 15px #000);
+  filter: drop-shadow(1px 2px 5px #333);
 }
 
 .lista_nav {
   font-family: "Courier New", Courier, monospace;
   display: flex;
+  text-align: center;
+  padding: 0 7%;
+  justify-content: center;
   list-style: none;
-  width: 50%;
-  padding: 2px;
 }
 
 .lista_nav > li > a {
   text-decoration: none;
   color: black;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 17px;
   border-radius: 5px;
   transition: 0.6s all ease;
   padding: 5px 10px;
-  margin: 5px;
+  margin: 10px;
 }
 
 .lista_nav li a:hover {
@@ -98,27 +95,27 @@ nav {
 
 .fotoeparagrafo {
   display: flex;
-  padding: 0 15px;
   flex-direction: column;
 }
 
 .fotoinicio img {
-  max-width: 1920px;
+  max-width: 2000px;
   width: 100%;
+  max-height: 500px;
+  object-fit: cover;
   border-radius: 0px 0px 10px 10px;
   margin-top: -95px;
-  filter: drop-shadow(2px 3px 15px #000);
+  filter: drop-shadow(1px 2px 5px #333);
 }
 
 .paragrafoinicio {
   z-index: 9;
-  background-color: #f5f5dcb7;
+  background-color: #f5f5dcd5;
   color: #000000;
   padding: 0px 10px;
   border-radius: 10px;
   font-size: 15px;
   margin: -80px 10px 50px 10px;
-  max-width: 100%;
 }
 
 /* fim intro */
@@ -133,22 +130,24 @@ section {
 
 .fotos img {
   border-radius: 10px;
-  filter: drop-shadow(2px 3px 15px #000)
+  filter: drop-shadow(1px 2px 5px #333)
 }
 
 .articles {
   flex-wrap: wrap;
   display: flex;
   justify-content: space-around;
+  align-items: end;
   gap: 30px;
   text-align: center;
   transition: 0.6s all ease;
-  padding: 10px 20px;
+  padding: 0 20px;
 }
 
 .articles a {
   text-decoration: none;
   font-size: 18px;
+  color: #000;
   padding: 5px;
   border-radius: 5px;
   font-family: 'Courier New', Courier, monospace;
@@ -156,10 +155,10 @@ section {
 
 .articles a:hover {
   transition: 0.3s all ease;
-  color: #e0b0b9;
+  color: #e4917f;
   opacity: 80%;
   background: #000000;
-  filter: drop-shadow(2px 3px 15px #000)
+  filter: drop-shadow(1px 2px 5px #333)
 }
 
 /* inicio efeito texto Article */
@@ -176,7 +175,7 @@ section {
   display: none;
   max-width: 350px;
   width: 85%;
-  filter: drop-shadow(2px 3px 15px #000);
+  filter: drop-shadow(1px 2px 5px #333)
 }
 
 .fotos:hover .conteudoArticle{
@@ -189,34 +188,68 @@ section {
 }
 
 h5{
-  font-family: 'Courier New', Courier, monospace;
   font-size: 18px;
+  color: #000;
   text-transform: uppercase;
-  margin: 0 0 5px 0;
+  margin: 5px 0 10px 0;
 }
 
 .conteudoArticle p{
   color: #000000;
   background-color: beige;
-  opacity: 65%;
+  opacity: 85%;
   border-radius: 10px;
   padding: 5px;
   font-size: 16px;
-  filter: drop-shadow(2px 3px 15px #000)
+  filter: drop-shadow(1px 2px 5px #333)
 }
 
 /* fim efeito texto Article */
 /* fim articles */
 /* Inicio articles "Clientes" */
 
+.youtube{
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+  text-align: center;
+  transition: 0.6s all ease;
+  padding: 10px 20px;
+  filter: drop-shadow(1px 2px 5px #333)
+}
+
+.youtube iframe{
+  border-radius: 10px;
+}
+
+.bloco_texto{
+  display: flex;
+  margin: 0 auto;
+  margin: 30px 0 40px 0;
+}
+
+.conversas_texto {
+  background-color: rgba(245, 245, 220, 0.829);
+  font-size: 14px;
+  border-radius: 10px;
+  margin: 10px;
+  text-align: center;
+  font-size: 15px;
+  padding: 10px 10px;
+  justify-content: space-around;
+}
+
 .spotify iframe{
   margin-top: 10px;
   display: flex;
-  filter: drop-shadow(2px 3px 15px #000);
+  filter: drop-shadow(1px 2px 5px #333);
   border-radius: 12px
 }
 
 .clientes {
+  margin-top: 50px;
+  margin-bottom: 20px;
   font-size: 18px;
   max-width: 95%;
   justify-content: flex-start;
@@ -224,15 +257,15 @@ h5{
 
 .divclientes {
   background-color: #282828;
-  color: #e0b0b9;
-  margin-top: 20px;
+  color: #e4917f;
+  margin-top: 10px;
   max-width: 100%;
   border-radius: 20px;
   text-align: center;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
-  filter: drop-shadow(2px 3px 15px #000);
+  filter: drop-shadow(1px 2px 5px #333);
   align-content: center;
 }
 
@@ -245,11 +278,11 @@ h5{
 
 .divclientes :hover{
   transition: 0.1s all ease;
-  background-color: #e0b0b9;
+  background-color: #e4917f;
   color: #000000;
   justify-content: center;
   border-radius: 20px;
-  filter: drop-shadow(2px 3px 15px #000);
+  filter: drop-shadow(1px 2px 5px #333);
 }
 /* Fim articles "Clientes" */
 
@@ -271,10 +304,10 @@ h5{
 
 .entreemcontato a:hover {
   transition: 0.3s all ease;
-  color: #e0b0b9;
+  color: #e4917f;
   opacity: 83%;
   background: #000000;
-  filter: drop-shadow(2px 3px 15px #000)
+  filter: drop-shadow(1px 2px 5px #333)
 }
 
 /* fim "Entre em contato" */
@@ -292,8 +325,16 @@ footer {
 
 /* fim footer */
 
-@media(max-width: 844px)
+@media(max-width: 900px)
 {
+  .lista_nav{
+    flex-direction: column;
+    padding: 0px;
+    width: 100%;
+    align-items: end;
+    padding-right: 21px;
+  }
+
   .paragrafoinicio{
     padding: 0px 10px;
     margin: -95px 10px 50px 10px;
@@ -343,9 +384,35 @@ footer {
   }
 
   .paragrafoinicio {
-    margin: 20px 10px 50px 10px;
+    margin: 20px 0 50px 0;
+    border-radius: 0;
     max-width: 100%;
     font-size: 16px;
+  }
+
+  .youtube iframe{
+    height: 200px;
+  }
+
+  .bloco_texto{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .conversas_texto {
+    background-color: rgba(245, 245, 220, 0.692);
+    font-size: 14px;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px 30px;
+    border-radius: 0;
+    margin: 10px 20px;
+    justify-content: space-between;
+  }
+
+  .clientes{
+    margin-top: 30px;
+    padding: 10px;
   }
 
   .divclientes h4 {
@@ -368,11 +435,11 @@ footer {
 
 @media(max-width: 525px){
 
-  .lista_nav{
-    flex-direction: column;
-    padding: 0px;
-    width: 100%;
-    align-items: end;
-    padding-right: 21px;
+  .divclientes{
+    padding: 1px 30px;
+  }
+
+  .divclientes h4{
+    padding: 20px 0px;
   }
 }
