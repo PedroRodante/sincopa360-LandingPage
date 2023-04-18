@@ -433,6 +433,32 @@ footer {
   }
 }
 
+@media (min-width: 1081px) {
+
+  nav ul {
+    display: flex;
+  }
+
+  .show-menu ul {
+    display: block;
+  }  
+}
+
+@media (max-width: 1080px) {
+  nav ul {
+    display: none !important;
+  }
+
+  .paragrafoinicio p{
+    font-size: 14px;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+}
+
+
 @media(max-width: 525px){
 
   .divclientes{
